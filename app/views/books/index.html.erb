@@ -1,0 +1,42 @@
+<body>
+    <header>
+      <h1>Books</h1>
+    </header>
+
+    <main>
+    <div class="title-box">
+      <h3 class="title">Title</h3>
+      <p class="text">ほんのタイトル</p>
+    </div>
+
+    <div class="body-box">
+      <h3 class="body">Body</h3>
+      <p class="text">本の説明</p>
+    </div>
+
+    <div class="doing-box">
+      <h3 class="doing">Doing</h3>
+      <div class="doing-list">
+      <p>"show"</p>
+      <p>"edit"</p>
+      <p>"Delete"</p>
+    　</div>
+    </div>
+    </main>
+
+    <create>
+    <!-- form_with部分 -->
+    <%= form_with model:@book, local:true do |f| %>
+    <div class="new">
+      <h2>New Book</h2>
+      <h5>Title</h5>
+      <%= f.text_field :title %>
+
+      <h5>Body</h5>
+      <%= f.text_area :body %>
+
+      <h4 > <%= f.submit 'Create Book' %></h4>
+    </div>
+    <% end %>
+    </create>
+</body>

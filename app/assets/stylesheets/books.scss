@@ -1,0 +1,27 @@
+main {
+  margin: 20px;
+  display: flex;
+  width: 100%;
+}
+
+.title-box,
+.body-box,
+.doing-box {
+  background-color: aquamarine;
+  margin: 10px;
+}
+
+.doing-list {
+  display: flex;
+}
+.doing {
+  visibility: hidden;
+}
+
+.doing-list p {
+  margin-right: 5px;
+}
+
+h3 {
+  text-align: center;
+}

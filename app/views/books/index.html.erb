@@ -4,24 +4,26 @@
     </header>
 
     <main>
+    <% @books.each do |book| %>
     <div class="title-box">
       <h3 class="title">Title</h3>
-      <p class="text">ほんのタイトル</p>
+      <p class="text"><%= @book.title %></p>
     </div>
 
     <div class="body-box">
       <h3 class="body">Body</h3>
-      <p class="text">本の説明</p>
+      <p class="text"><%= @book. %></p>
     </div>
 
     <div class="doing-box">
       <h3 class="doing">Doing</h3>
       <div class="doing-list">
-      <p>"show"</p>
+      <p><%= link_to "show", book_path %></p>
       <p>"edit"</p>
       <p>"Delete"</p>
     　</div>
     </div>
+    <% end %>
     </main>
 
     <create>

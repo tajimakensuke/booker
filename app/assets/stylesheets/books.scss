@@ -1,4 +1,4 @@
-main {
+.flex {
   margin: 20px;
   display: flex;
   width: 100%;
@@ -17,9 +17,8 @@ main {
 .doing {
   visibility: hidden;
 }
-
-.doing-list p {
-  margin-right: 5px;
+.doing-list p{
+  margin-right: 10px;
 }
 
 h3 {

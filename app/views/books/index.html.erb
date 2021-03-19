@@ -4,8 +4,6 @@
     </header>
 
     <main>
-
-
     <div class="flex">
     <div class="title-box">
       <h3 class="title">Title</h3>
@@ -29,7 +27,7 @@
 
       <p><%= link_to "show", book_path(book.id) %></p>
       <p><%= link_to "edit", edit_book_path(book.id) %></p>
-      <p><%= link_to "Destroy", book_path(book), method: :delete,"data-confirm" => "Are you sure?" %></p>
+      <p><%= link_to "Destroy", book_path(book), method: :delete,"data-confirm" => "Are you sure" %></p>
 
       </div>
       <% end %>

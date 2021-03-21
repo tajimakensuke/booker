@@ -1,9 +1,22 @@
 .show {
   margin: 15px;
-  background-color: aquamarine;
   line-height: 40px;
 }
 .show h4 {
   padding-left: 20px;
-  
 }
+.erroor_message{
+  background-color: red;
+  color: #fff;
+}
+.render {
+  border: 2px solid red;
+  width: 450px;
+  margin-top: 20px;
+}
+.edit_back {
+  display: flex;
+}
+// .show > p {
+//   color: green;
+// }
